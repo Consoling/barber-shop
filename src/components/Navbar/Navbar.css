@@ -50,102 +50,210 @@ grid-column: 3/4;
 } */
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 18px 20px;
 }
 
 .menu-items {
-    display: flex;
-    justify-content:center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu-items ul{
-    display: flex;
-    list-style: none;
+.menu-items ul {
+  display: flex;
+  list-style: none;
 }
 
 .menu-items ul li {
-    margin: 0 2rem;
-
+  margin: 0 2rem;
 }
 
-
-
-.menu-items ul li a{
-    text-transform: capitalize;
-     color:aliceblue;
-     transition: 0.5s;
-     text-decoration: none;
-     letter-spacing: 1px;
-     
-     
+.menu-items ul li a {
+  text-transform: capitalize;
+  color: aliceblue;
+  transition: 0.5s;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
-
-
 
 .login-button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-btn {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  .btn-text {
+    color: #333;
+  }
+}
+
+.btn-text {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.mobile-menu {
+  /* background-color: #333; */
+  display: none;
+}
+
+
+.close-btn-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .close-btn-container button {
+    margin: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: none;
+    background-color: #333;
+    border: none;
+  }
+
+  .side-nav-container {
+    display: flex;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    right: 0;
+    border-left-radius: 10px;
+  }
+
+  .side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+  }
+
+  .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+  }
+
+  .side-nav ul li {
+    margin: 25px 0;
+  }
+
+  .side-nav ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  .side-nav ul li a:hover {
+    color: #f1c40f;
+  }
+
+  .side-nav ul li button {
     border: 2px solid #fff;
     border-radius: 5px;
     padding: 10px 30px;
     cursor: pointer;
     transition: 0.5s ease-out;
-}
+  }
 
-.login-btn:hover {
-    background-color: #fff;
-    .btn-text {
-        color: #333;
-    
-    }
-
-}
-
-.btn-text{
+  .side-nav ul li button span {
     color: #fff;
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     transition: 0.5s;
-    
-}
+  }
 
+@media (max-width: 1024px) {
+  .menu-items {
+    display: none;
+  }
 
+  .login-button-container {
+    display: none;
+  }
 
+  .mobile-menu {
+    display: block;
+  }
 
-.mobile-menu {
+  .nav {
+    padding: 14px 20px;
+  }
+
+  .mobile-menu button {
     font-size: 1.8rem;
     font-weight: 600;
+    color: none;
+    background-color: #333;
+    border: none;
+    /* margin: 5px; */
+
+    /* cursor: pointer; */
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-items {
     display: none;
+  }
+
+  .login-button-container {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav {
+    padding: 14px 20px;
+  }
+
+  .mobile-menu button {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: none;
+    background-color: #333;
+    border: none;
+    /* margin: 5px; */
+
+    /* cursor: pointer; */
+  }
+
+  
 }
-
-
-@media screen and (max-width: 768px) {
-    .menu-items {
-        display: none;
-    }
-
-    .login-button-container {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .nav {
-        padding: 14px 20px;
-    }
-}
-
-`

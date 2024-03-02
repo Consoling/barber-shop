@@ -105,16 +105,63 @@ const Navbar = () => {
           className="mobile-menu"
           onClick={handleShow}
         >
-          {!show ? (
+          <motion.button>
             <ion-icon name="grid-outline"></ion-icon>
-          ) : (
-            <ion-icon name="close-circle-outline"></ion-icon>
-          )}
+          </motion.button>
         </motion.div>
-        <motion.div className="menu-items"
-         initial={{ y: -100, opacity: 0 }}
-         animate={{ y: 0, opacity: 1 }}
-         transition={{ duration: 0.5 }}>
+
+        {show && (
+          <motion.div className="side-nav-container">
+            <motion.div className="side-nav">
+              <motion.div className="close-btn-container">
+                <motion.button
+                  className="close-btn"
+                  initial={{ scale: 0 }}
+                  animate={{ rotate: 180, scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                  }}
+                  whileTap={{ scale: 1.3 }}
+                  onClick={() => setShow(!show)}
+                >
+                  <ion-icon name="close-circle-outline"></ion-icon>
+                </motion.button>
+              </motion.div>
+              <motion.ul
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <motion.li>
+                  <motion.a>HOME</motion.a>
+                </motion.li>
+                <motion.li>
+                  <motion.a>About US</motion.a>
+                </motion.li>
+                <motion.li>
+                  <motion.a>Our SERVICES</motion.a>
+                </motion.li>
+                <motion.li>
+                  <motion.a>CONTACT US</motion.a>
+                </motion.li>
+                <motion.li>
+                  <motion.button>
+                    <span>Login</span>
+                  </motion.button>
+                </motion.li>
+              </motion.ul>
+            </motion.div>
+          </motion.div>
+        )}
+
+        <motion.div
+          className="menu-items"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <ul>
             <motion.li>
               <a href="#">HOME</a>
