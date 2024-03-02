@@ -105,7 +105,10 @@ const Navbar = () => {
           }}
           whileTap={{ scale: 1.3 }}
           className="mobile-menu"
-          onClick={handleShow}
+          onClick={() => {
+            handleShow();
+          }}
+          // style={{display: show ? 'none' : 'block'}}
         >
           <motion.button>
             <ion-icon name="grid-outline"></ion-icon>

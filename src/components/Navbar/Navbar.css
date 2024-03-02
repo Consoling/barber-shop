@@ -88,6 +88,7 @@
   display: flex;
   height: 100vh;
   background-color: #333;
+  opacity: 0.9;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -180,6 +181,8 @@
 }
 
 @media (max-width: 768px) {
+
+
   .menu-items {
     display: none;
   }
