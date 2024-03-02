@@ -1,4 +1,4 @@
-.Main-nav {
+/* .Main-nav {
     width:100;
     height: 10rem;
     display: grid;
@@ -47,4 +47,105 @@ grid-column: 3/4;
 .login-button input{
     text-decoration: solid;
     color: aliceblue;
+} */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 18px 20px;
 }
+
+.menu-items {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.menu-items ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu-items ul li {
+    margin: 0 2rem;
+
+}
+
+
+
+.menu-items ul li a{
+    text-transform: capitalize;
+     color:aliceblue;
+     transition: 0.5s;
+     text-decoration: none;
+     letter-spacing: 1px;
+     
+     
+}
+
+
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    .btn-text {
+        color: #333;
+    
+    }
+
+}
+
+.btn-text{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+
+
+
+
+.mobile-menu {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .login-button-container {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav {
+        padding: 14px 20px;
+    }
+}
+
+`
