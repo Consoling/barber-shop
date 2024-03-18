@@ -1,10 +1,10 @@
 import React from 'react'
-// import './Navbar.css'
+ import './Navbar.css'
 
 
 const Navbar = () => {
   return (
-      <>
+      
     <nav className="Main-nav">
       <div className="Logo">
         <h2>
@@ -30,13 +30,15 @@ const Navbar = () => {
       </div>
       <div className="login-button">
         
-        <input type='button'>
-           Login
-        </input>
+        <button className="btt">
+            LOGIN
+        </button>
+           
+        
       </div>
     </nav>
     
-    </>
+    
   )
 }
 
