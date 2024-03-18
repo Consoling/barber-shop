@@ -249,17 +249,18 @@
 
   .info{
 	display:flex;
+	
   }
 #info-img img{
-	width:500px;
-	height:500px;
-	border-radius: 10px;
-	margin: 30px;
-	
-	
+	width:500%;
+	height:550px;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: 0.3;
+	border-radius: 12px;
 }
 #info-para{
-	margin-left:150px;
+	margin-left:405px;
 }
 #info-para h1{
 	background: -webkit-linear-gradient(#f3ec78,#af4261);

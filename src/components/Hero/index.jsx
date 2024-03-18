@@ -149,7 +149,7 @@ const Hero = () => {
 
     <div className='info'>
         <div id="info-img">
-          <img src="\src\assets\barber1img.jpg"></img>
+          <img src="\src\assets\bannerimg.jpg"></img>
 
         </div>
         <div id="info-para">
