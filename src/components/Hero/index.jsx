@@ -153,8 +153,8 @@ const Hero = () => {
 
         </div>
         <div id="info-para">
-          <h1>About BarberBook</h1><br ></br>
-          <span>Your Premier Online Barber Shop Booking Service</span>
+          <h1>About BarberBook</h1>
+          <strong>Your Premier Online Barber Shop Booking Service</strong>
          <p>
             BarberBook is dedicated to revoluntionizing your grooming experience.With a collective experience of over 
             3 years, we bring you a seamless online platform to book appointment with your favorite barbers.
@@ -167,6 +167,7 @@ const Hero = () => {
             HTML, HTML5, CSS, CSS3,jQuery,and JavaScript to create a user-friendly experience.Our Website is not just a booking platform; it's 
             a hub for quality content related to barbering, ensuring you stay informed and inspired.
          </p>
+         <br></br> <br></br>
          <div className='Book'>
           <button id='Book-text'>Book Your Appointment</button>
           
@@ -181,6 +182,7 @@ const Hero = () => {
     <div id="contact-details">
             <h1> Contact Us </h1>
             <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict attention</span>
+            <br></br> <br></br>
             <h2>USA</h2>
             <span> 195 E Parker Square DR,Parker ,Co 801 +43 982-382-2870</span>
             <br></br>  <br></br>
@@ -197,8 +199,8 @@ const Hero = () => {
           <input type="text " placeholder='Email'></input>
           </div>
           <br ></br> <br></br>
-          <div>
-          <input type="text " placeholder='Your Name'></input>
+          <div id='msg'>
+          <input type="text " placeholder='Message'></input>
           </div>
           <br ></br> <br></br>
           <div >
