@@ -1,9 +1,13 @@
+
 import React from 'react'
  import './Navbar.css'
 
 
+
 const Navbar = () => {
+  
   return (
+
       
     <nav className="Main-nav">
       <div className="Logo">
@@ -43,4 +47,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

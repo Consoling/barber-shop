@@ -1,3 +1,4 @@
+
 .Logo{
     grid-column: 2/3;   
     margin: 10px 34px;
@@ -12,7 +13,7 @@
   
     
     align-items: center;
-   
+   height: 80px;
     display: grid;
     grid-template-columns: 3rem 1fr 2fr 1fr 3rem  ;
     background-color: rgb(51, 50, 50);
@@ -56,8 +57,9 @@ background-attachment: fixed;
 .menu-items ul li a:hover{
 color:black;
 background-color:aquamarine;
-
 }
+
+
 .login-button{
     
     float: right;
@@ -85,4 +87,5 @@ background-color:aquamarine;
     color:black;
     background-color: aquamarine;
  }
+
 

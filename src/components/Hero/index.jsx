@@ -1,6 +1,15 @@
 import React from 'react'
 import './Hero.css'
-
+import { MdOutlineContentCut } from "react-icons/md";
+import { IoIosTime } from "react-icons/io";
+import { TbCashOff } from "react-icons/tb";
+import { FaHelmetSafety } from "react-icons/fa6";
+import { VscFeedback } from "react-icons/vsc";
+import { FaServicestack } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { FcOnlineSupport } from "react-icons/fc";
+import { AiFillSchedule } from "react-icons/ai";
+import { FaBusinessTime } from "react-icons/fa";
 const Hero = () => {
   return (
     <section>
@@ -30,26 +39,32 @@ const Hero = () => {
         <p>
            Convenient Professional Service
         </p>
+        <MdOutlineContentCut className='icons cut' />
         </div>
         <div id='content2'>
         <p>
            Saves Time
         </p>
+        <IoIosTime className='icons savetinme' />
         </div>
         <div id='content3'>
         <p>
            Cashless Transactions
         </p>
+        <TbCashOff  className='icons cashless'/>
         </div>
         <div id='content4'>
         <p>
            Safety Measures
         </p>
+        <FaHelmetSafety className='icons safety' />
         </div>
         <div id='content5'>
         <p>
            Feedback Acknowleged
         </p>
+        <VscFeedback className='icons feedback' />
+
         </div>
         
         </div>
@@ -66,26 +81,33 @@ const Hero = () => {
         <p>
            Prepaid Services Management 
         </p>
+        <FaServicestack className='icons prepaid' />
         </div>
         <div id='content7'>
         <p>
           Tax Advantages and Record Keeping
         </p>
+        <GiReceiveMoney className='icons tax' />
         </div>
         <div id='content8'>
         <p>
            Barber Support and Resources 
         </p>
+        <FcOnlineSupport className='icons support' />
         </div>
         <div id='content9'>
         <p>
            FLexible Scheduling
         </p>
+        <AiFillSchedule className='icons scheduling' />
+
         </div>
         <div id='content10'>
         <p>
          Full/Part-Time Opportunities
         </p>
+        <FaBusinessTime  className='icons full/part'/>
+
         </div>
         
         </div>
@@ -97,12 +119,15 @@ const Hero = () => {
      <div className='client'>
       <h1>What Our Client Says !!</h1>
       <hr></hr>
-      <p>This guy does everything he can to get the job done an done right. THis is the second time I've hired him,and I'll hire him again
+      <br></br>
+      <p>This guy does everything he can to get the job done an done right. This is the second time I've hired him,and I'll hire him again
         in the future.
       </p>
+      <br></br> 
       <div id='clientimg'>
-        <img src="#"></img>
+        <img src="\src\assets\clientimg.jpg"></img>
       </div>
+      <br></br><br></br><br></br>
       <h4>Renee Sims</h4>
 
     </div>
